@@ -1,14 +1,16 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './Component/Navigation';
-import Content from './Component/Content';
+import Home from './Component/Home';
+import Process from './Component/Process';
 
 
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Content />
+      <Home />
+      <Process />
     </div>
   );
 }
