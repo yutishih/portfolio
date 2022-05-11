@@ -1,14 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap';
 import Logo from '../Images/logo.png';
 
-class Navigation extends Component {
+function Navigation() {
 
-  render() {
-    return (
+  const [HeaderColor, setHeaderColor] = useState('navi_wrapper');
+  const listenScrollEvent = (event) => {
+    if (window.scrollY < 70){
+      return setHeaderColor('navi_wrapper')
+    }else if(window.scrollY > 70){
+      return setHeaderColor('navi_wrapper_white')
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+    return () =>
+    window.removeEventListener('scroll', listenScrollEvent);
+  }, []);
+
+  return (
     <div className='section-component'>
       <div className='navigation'>
-        <div className='navi-wrapper'>
+        <div className={HeaderColor}>
           <Container>
             <div className='inner'>
               <div className='logo'>
@@ -29,8 +42,6 @@ class Navigation extends Component {
         </div>
       </div>
     </div>
-    );
-  }
+  );
 }
-
 export default Navigation
