@@ -4,6 +4,7 @@ import Navigation from './Component/Navigation';
 import Home from './Component/Home';
 import Process from './Component/Process';
 import About from './Component/About';
+import Portfolio from './Component/Portfolio';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Process />
       <About />
+      <Portfolio />
     </div>
   );
 }
