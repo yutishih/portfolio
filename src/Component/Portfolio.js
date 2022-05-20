@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 import Empty from '../Images/empty.jpg'
 import Empty_2 from '../Images/empty_2.jpg'
@@ -13,6 +13,55 @@ import Brush_5 from '../Images/brush_5.png'
 
 function Portfolio() {
 
+  const [showYoutube, setShowYoutube] =  useState(true);
+  const [showVimeo, setShowVimeo] =  useState(true);
+  const [showSoundcloud, setShowSoundcloud] =  useState(true);
+  const [showPopup, setShowPopup] =  useState(true);
+  const [showDetail, setShowDetail] =  useState(true);
+
+  const showHandlerAll= () => {
+    setShowYoutube(true);
+    setShowVimeo(true);
+    setShowSoundcloud(true);
+    setShowPopup(true);
+    setShowDetail(true);
+  }
+  const showHandlerYoutube= () => {
+    setShowYoutube(true);
+    setShowVimeo(false);
+    setShowSoundcloud(false);
+    setShowPopup(false);
+    setShowDetail(false);
+  }
+  const showHandlerVimeo= () => {
+    setShowYoutube(false);
+    setShowVimeo(true);
+    setShowSoundcloud(false);
+    setShowPopup(false);
+    setShowDetail(false);
+  }
+  const showHandlerSoundcloud= () => {
+    setShowYoutube(false);
+    setShowVimeo(false);
+    setShowSoundcloud(true);
+    setShowPopup(false);
+    setShowDetail(false);
+  }
+  const showHandlerPopup= () => {
+    setShowYoutube(false);
+    setShowVimeo(false);
+    setShowSoundcloud(false);
+    setShowPopup(true);
+    setShowDetail(false);
+  }
+  const showHandlerDetail= () => {
+    setShowYoutube(false);
+    setShowVimeo(false);
+    setShowSoundcloud(false);
+    setShowPopup(false);
+    setShowDetail(true);
+  }
+
   return (
     <div className='section-component'>
       <div className='portfolio'>
@@ -24,12 +73,12 @@ function Portfolio() {
           </div>
           <div className='portfolio_filter'>
             <ul>
-              <li><a href="#" className='current'>All</a></li>
-              <li><a href="#" className='current'>Youtube</a></li>
-              <li><a href="#" className='current'>Vimeo</a></li>
-              <li><a href="#" className='current'>Soundcloud</a></li>
-              <li><a href="#" className='current'>Popup</a></li>
-              <li><a href="#" className='current'>Detail</a></li>
+              <li><a className='current' onClick={showHandlerAll}>All</a></li>
+              <li><a className='current' onClick={showHandlerYoutube}>Youtube</a></li>
+              <li><a className='current' onClick={showHandlerVimeo}>Vimeo</a></li>
+              <li><a className='current' onClick={showHandlerSoundcloud}>Soundcloud</a></li>
+              <li><a className='current' onClick={showHandlerPopup}>Popup</a></li>
+              <li><a className='current' onClick={showHandlerDetail}>Detail</a></li>
             </ul>
           </div>
           <div className='portfolio_titles'>
@@ -38,7 +87,7 @@ function Portfolio() {
           </div>
           <div className='portfolio_list fadeInUp'>
             <ul className='gallery_zoom grid' style={{position: 'relative', height: 957.126}}>
-              <li className='youtube grid-item' style={{position:'absolute', left: 0, top: 0}}>
+              <li className={"youtube grid-item" + (showYoutube ? " show":" hide")} style={{position:'absolute', left: 0, top: 0}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -52,7 +101,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className='vimeo grid-item' style={{position:'absolute', left: 448.328, top: 0}}>
+              <li className={"vimeo grid-item" + (showVimeo ? " show":" hide")} style={{position:'absolute', left: 448.328, top: 0}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -66,7 +115,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className='soundcloud grid-item' style={{position:'absolute', left: 896.656, top: 0}}>
+              <li className={'soundcloud grid-item' + (showSoundcloud ? " show":" hide")} style={{position:'absolute', left: 896.656, top: 0}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -76,7 +125,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className='popup grid-item' style={{position:'absolute', left: 448.328, top: 367.688}}>
+              <li className={'popup grid-item' + (showPopup ? " show":" hide")} style={{position:'absolute', left: 448.328, top: 367.688}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -90,7 +139,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className='popup grid-item' style={{position:'absolute', left: 0, top: 589.438}}>
+              <li className={'popup grid-item' + (showPopup ? " show":" hide")} style={{position:'absolute', left: 0, top: 589.438}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -100,7 +149,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className='detail grid-item' style={{position:'absolute', left: 896.656, top: 589.438}}>
+              <li className={'detail grid-item' + (showDetail ? " show":" hide")} style={{position:'absolute', left: 896.656, top: 589.438}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">

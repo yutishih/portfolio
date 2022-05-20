@@ -634,7 +634,7 @@ img{
   animation-name: fadeInUp;
 }
 .portfolio .portfolio_list ul {
-  margin: 0px 0px 0px -25px;
+  margin: 0px 0px 0px 30px;
   list-style-type: none;
   position: relative;
   z-index: 2;
@@ -726,4 +726,10 @@ img{
   50%{
     opacity: 1;
   }
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
 }
