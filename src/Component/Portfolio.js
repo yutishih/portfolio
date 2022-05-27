@@ -13,6 +13,7 @@ import Brush_5 from '../Images/brush_5.png'
 
 function Portfolio() {
 
+  // show or hide
   const [showYoutube, setShowYoutube] =  useState(true);
   const [showVimeo, setShowVimeo] =  useState(true);
   const [showSoundcloud, setShowSoundcloud] =  useState(true);
@@ -61,6 +62,14 @@ function Portfolio() {
     setShowPopup(false);
     setShowDetail(true);
   }
+
+  // // Be the first item
+
+  // const [ moveFirst, setMoveFirst ] =  useState('orgCoordinate');
+
+  // const firstItemHandler = () => {
+  //   setMoveFirst('firstCoordinate')
+  // }
 
   return (
     <div className='section-component'>
