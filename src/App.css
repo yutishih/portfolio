@@ -13,6 +13,9 @@ body{
 img{
   max-width: 100%;
 }
+a{
+  cursor: pointer;
+}
 .container{
   max-width: 1400px !important;
   width: 100%;
@@ -732,4 +735,25 @@ img{
 }
 .hide{
   display: none;
+}
+.portfolio .portfolio_list .grid_item{
+  position: absolute;
+  transition-duration: 0.5s;
+  transition-delay: 0ms;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: popUp;
+}
+@keyframes popUp{
+  0%{
+    opacity: 0;
+    transform: scale(0.001)
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+.portfolio .portfolio_list .grid_item .main:hover{
+  transform: scale(1.2);
 }

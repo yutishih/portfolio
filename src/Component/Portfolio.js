@@ -13,12 +13,19 @@ import Brush_5 from '../Images/brush_5.png'
 
 function Portfolio() {
 
-  // show or hide
+  // show or hide, change the order of items
   const [showYoutube, setShowYoutube] =  useState(true);
   const [showVimeo, setShowVimeo] =  useState(true);
   const [showSoundcloud, setShowSoundcloud] =  useState(true);
   const [showPopup, setShowPopup] =  useState(true);
   const [showDetail, setShowDetail] =  useState(true);
+
+  const [valueFirstItem, setValueFirstItem] =  useState(true);
+  const [valueSecondItem, setValueSecondItem] =  useState(true);
+  const [valueThirdItem, setValueThirdItem] =  useState(true);
+  const [valueFourthItem, setValueFourthItem] =  useState(true);
+  const [valueFifthItem, setValueFifthItem] =  useState(true);
+  const [valueSixthItem, setValueSixthItem] =  useState(true);
 
   const showHandlerAll= () => {
     setShowYoutube(true);
@@ -26,6 +33,13 @@ function Portfolio() {
     setShowSoundcloud(true);
     setShowPopup(true);
     setShowDetail(true);
+
+    setValueFirstItem(true);
+    setValueSecondItem(true);
+    setValueThirdItem(true);
+    setValueFourthItem(true);
+    setValueFifthItem(true);
+    setValueSixthItem(true);
   }
   const showHandlerYoutube= () => {
     setShowYoutube(true);
@@ -33,6 +47,13 @@ function Portfolio() {
     setShowSoundcloud(false);
     setShowPopup(false);
     setShowDetail(false);
+
+    setValueFirstItem(false);
+    setValueSecondItem(true);
+    setValueThirdItem(true);
+    setValueFourthItem(true);
+    setValueFifthItem(true);
+    setValueSixthItem(true);
   }
   const showHandlerVimeo= () => {
     setShowYoutube(false);
@@ -40,6 +61,13 @@ function Portfolio() {
     setShowSoundcloud(false);
     setShowPopup(false);
     setShowDetail(false);
+
+    setValueFirstItem(true);
+    setValueSecondItem(false);
+    setValueThirdItem(true);
+    setValueFourthItem(true);
+    setValueFifthItem(true);
+    setValueSixthItem(true);
   }
   const showHandlerSoundcloud= () => {
     setShowYoutube(false);
@@ -47,6 +75,13 @@ function Portfolio() {
     setShowSoundcloud(true);
     setShowPopup(false);
     setShowDetail(false);
+
+    setValueFirstItem(true);
+    setValueSecondItem(true);
+    setValueThirdItem(false);
+    setValueFourthItem(true);
+    setValueFifthItem(true);
+    setValueSixthItem(true);
   }
   const showHandlerPopup= () => {
     setShowYoutube(false);
@@ -54,6 +89,13 @@ function Portfolio() {
     setShowSoundcloud(false);
     setShowPopup(true);
     setShowDetail(false);
+
+    setValueFirstItem(true);
+    setValueSecondItem(true);
+    setValueThirdItem(true);
+    setValueFourthItem(false);
+    setValueFifthItem(false);
+    setValueSixthItem(true);
   }
   const showHandlerDetail= () => {
     setShowYoutube(false);
@@ -61,15 +103,14 @@ function Portfolio() {
     setShowSoundcloud(false);
     setShowPopup(false);
     setShowDetail(true);
+
+    setValueFirstItem(true);
+    setValueSecondItem(true);
+    setValueThirdItem(true);
+    setValueFourthItem(true);
+    setValueFifthItem(true);
+    setValueSixthItem(false);
   }
-
-  // // Be the first item
-
-  // const [ moveFirst, setMoveFirst ] =  useState('orgCoordinate');
-
-  // const firstItemHandler = () => {
-  //   setMoveFirst('firstCoordinate')
-  // }
 
   return (
     <div className='section-component'>
@@ -96,7 +137,7 @@ function Portfolio() {
           </div>
           <div className='portfolio_list fadeInUp'>
             <ul className='gallery_zoom grid' style={{position: 'relative', height: 957.126}}>
-              <li className={"youtube grid-item" + (showYoutube ? " show":" hide")} style={{position:'absolute', left: 0, top: 0}}>
+              <li className={"youtube grid_item" + (showYoutube ? " show":" hide")}  style={{left: (valueFirstItem ? 0:0), top: (valueFirstItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -110,7 +151,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={"vimeo grid-item" + (showVimeo ? " show":" hide")} style={{position:'absolute', left: 448.328, top: 0}}>
+              <li className={"vimeo grid_item" + (showVimeo ? " show":" hide")} style={{left: (valueSecondItem ? 448.328 : 0), top: (valueSecondItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -124,7 +165,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'soundcloud grid-item' + (showSoundcloud ? " show":" hide")} style={{position:'absolute', left: 896.656, top: 0}}>
+              <li className={'soundcloud grid_item' + (showSoundcloud ? " show":" hide")} style={{left: (valueThirdItem ? 896.656 : 0), top: (valueThirdItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -134,7 +175,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid-item' + (showPopup ? " show":" hide")} style={{position:'absolute', left: 448.328, top: 367.688}}>
+              <li className={'popup grid_item' + (showPopup ? " show":" hide")} style={{left: (valueFourthItem ? 448.328 : 0), top: (valueFourthItem ? 367.688:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -148,7 +189,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid-item' + (showPopup ? " show":" hide")} style={{position:'absolute', left: 0, top: 589.438}}>
+              <li className={'popup grid_item popUp' + (showPopup ? " show":" hide") } style={{left: (valueFifthItem ? 0 : 448.328), top: (valueFifthItem ? 589.438:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -158,7 +199,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'detail grid-item' + (showDetail ? " show":" hide")} style={{position:'absolute', left: 896.656, top: 589.438}}>
+              <li className={'detail grid_item popUp' + (showDetail ? " show":" hide")} style={{left: (valueSixthItem ? 896.656 : 0), top: (valueSixthItem ? 589.438:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
