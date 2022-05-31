@@ -5,6 +5,7 @@ import Home from './Component/Home';
 import Process from './Component/Process';
 import About from './Component/About';
 import Portfolio from './Component/Portfolio';
+import Skills from './Component/Skills';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Process />
       <About />
       <Portfolio />
+      <Skills />
     </div>
   );
 }
