@@ -855,12 +855,13 @@ a{
   width: 0;
   height: 100%;
 }
+.skills .progress_inner .background .bar {
+  width: 0;
+}
 .skills .progress_inner .background .bar.open {
   width: 100%;
 }
 .skills .progress_inner .background .bar_in {
-  width: 100%;
-  background-color: rgb(247, 80, 35);
   height: 8px;
   overflow: hidden;
   border-top-left-radius: 50px;
@@ -872,6 +873,6 @@ a{
   width: 50%;
   padding-left: 100px;
 }
-.dizme_tm_skills .right img {
+.skills .right img {
   max-height: 800px;
 }
