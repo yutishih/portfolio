@@ -861,6 +861,27 @@ a{
 .skills .progress_inner .background .bar.open {
   width: 100%;
 }
+.skills .progress_inner .background .bar.transition_1 {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.skills .progress_inner .background .bar.transition_2 {
+  -webkit-transition: all .75s ease;
+  -moz-transition: all .75s ease;
+  -ms-transition: all .75s ease;
+  -o-transition: all .75s ease;
+  transition: all .75s ease;
+}
+.skills .progress_inner .background .bar.transition_3 {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
 .skills .progress_inner .background .bar_in {
   height: 8px;
   overflow: hidden;

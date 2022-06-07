@@ -3,25 +3,23 @@ import skills_right from '../Images/skills.jpg'
 
 function Skills() {
 
-  const [barWidth, setBarWidth] = useState(true);
+  const [scrollHeight, setScrollHeight] = useState(true);
 
-  // scrollPosition is the return value
+  // scrollPosition is the return value 3618
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position <= 3518){
-      setScrollPosition(3518);
-    }else if (position >= 3618){
-      setScrollPosition(3618);
+    if (position >= 3600) {
+      setScrollHeight(false);
     }else{
-      setScrollPosition(position);
+      // setScrollHeight(true);
     }
   };
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-        window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -40,11 +38,11 @@ function Skills() {
                 <div className='progress_inner'>
                   <span>
                     <span className='label opened'>Illustrator</span>
-                    <span className='number'>{(scrollPosition-3518) + "%"}</span>
+                    <span className='number'>100%</span>
                   </span>
                   <div className='background'>
-                    <div className='bar open'>
-                      <div className='bar_in' style={{width: (scrollPosition-3418) + "%", backgroundColor: 'rgb(247, 80, 35)'}}></div>
+                    <div className={'bar' + (scrollHeight ? ' ': ' open transition_1')}>
+                      <div className='bar_in' style={{backgroundColor: 'rgb(247, 80, 35)'}}></div>
                     </div>
                   </div>
                 </div>
@@ -54,8 +52,8 @@ function Skills() {
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>
-                    <div className='bar open'>
-                      <div className='bar_in' style={{width: 100 + "%", backgroundColor: 'rgb(28, 190, 89)'}}></div>
+                    <div className={'bar' + (scrollHeight ? ' ': ' open transition_2')}>
+                      <div className='bar_in' style={{backgroundColor: 'rgb(28, 190, 89)'}}></div>
                     </div>
                   </div>
                 </div>
@@ -65,8 +63,8 @@ function Skills() {
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>
-                    <div className='bar open'>
-                      <div className='bar_in' style={{width: 100 + "%", backgroundColor: 'rgb(128, 103, 240)'}}></div>
+                    <div className={'bar' + (scrollHeight ? ' ': ' open transition_3')}>
+                      <div className='bar_in' style={{backgroundColor: 'rgb(128, 103, 240)'}}></div>
                     </div>
                   </div>
                 </div>
