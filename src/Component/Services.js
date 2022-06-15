@@ -44,7 +44,7 @@ function Services() {
                     <img src={Icon_2} />
                   </span>
                   <div className='title'>
-                    <h3>Creative Design</h3>
+                    <h3>Webpage Design</h3>
                     <span className='price'>Starts from <span>$99</span></span>
                   </div>
                   <div className='text'>
@@ -59,7 +59,7 @@ function Services() {
                     <img src={Icon_3} />
                   </span>
                   <div className='title'>
-                    <h3>Creative Design</h3>
+                    <h3>Customized Website</h3>
                     <span className='price'>Starts from <span>$99</span></span>
                   </div>
                   <div className='text'>
@@ -74,7 +74,7 @@ function Services() {
                     <img src={Icon_4} />
                   </span>
                   <div className='title'>
-                    <h3>Creative Design</h3>
+                    <h3>SEO backlinks</h3>
                     <span className='price'>Starts from <span>$99</span></span>
                   </div>
                   <div className='text'>
