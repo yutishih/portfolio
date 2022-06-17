@@ -953,6 +953,17 @@ a{
   animation-duration: 1s;
   animation-delay: 0.2s;
 }
+.services .service_list ul .service_left {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
+.services .service_list ul .service_right {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-name: fadeInRight;
+}
 .services .service_list ul li .list_inner {
   width: 100%;
   height: 100%;
@@ -1008,7 +1019,7 @@ a{
   animation-duration: 1s;
   animation-name: fadeInLeft;
 }
-.dservices .brush_6 img {
+.services .brush_6 img {
   max-width: 460px;
 }
 .services .brush_7 {

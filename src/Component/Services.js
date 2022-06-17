@@ -22,7 +22,7 @@ function Services() {
           </div>
           <div className='service_list'>
             <ul>
-              <li className='fadeInLeft'>
+              <li className='service_left fadeInLeft'>
                 <div className='list_inner'>
                   <span className='icon'>
                     <Service_1 />
@@ -37,7 +37,7 @@ function Services() {
                   </div>
                 </div>
               </li>
-              <li className='fadeInRight'>
+              <li className='service_right fadeInRight'>
                 <div className='list_inner'>
                   <span className='icon'>
                     <Service_2 />
@@ -52,7 +52,7 @@ function Services() {
                   </div>
                 </div>
               </li>
-              <li className='fadeInLeft'>
+              <li className='service_left fadeInLeft'>
                 <div className='list_inner'>
                   <span className='icon'>
                     <Service_3 />
@@ -67,7 +67,7 @@ function Services() {
                   </div>
                 </div>
               </li>
-              <li className='fadeInRight'>
+              <li className='service_right fadeInRight'>
                 <div className='list_inner'>
                   <span className='icon'>
                     <Service_4 />
