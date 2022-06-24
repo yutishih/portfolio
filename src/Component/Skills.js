@@ -5,8 +5,6 @@ function Skills() {
 
   const [scrollHeight, setScrollHeight] = useState(true);
 
-  // scrollPosition is the return value 3618
-  const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
     if (position >= 3600) {

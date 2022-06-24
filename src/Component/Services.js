@@ -1,4 +1,5 @@
 import React from 'react'
+import Tilt from 'react-tilt'
 import Icon_1 from '../Images/icon_1.png'
 import Icon_2 from '../Images/icon_2.png'
 import Icon_3 from '../Images/icon_3.png'
@@ -11,6 +12,7 @@ import Service_3 from '../SVGComponents/SVGServices_3'
 import Service_4 from '../SVGComponents/SVGServices_4'
 
 function Services() {
+
   return (
     <div className='section-component'>
       <div className='services'>
@@ -23,64 +25,72 @@ function Services() {
           <div className='service_list'>
             <ul>
               <li className='service_left fadeInLeft'>
-                <div className='list_inner'>
-                  <span className='icon'>
-                    <Service_1 />
-                    <img src={Icon_1} />
-                  </span>
-                  <div className='title'>
-                    <h3>Marketing Email</h3>
-                    <span className='price'>Starts from <span>$99</span></span>
+                <Tilt className='list_inner' options={{perspective: 2000, scale: 1}}>
+                  <div>
+                    <span className='icon'>
+                      <Service_1 />
+                      <img src={Icon_1} />
+                    </span>
+                    <div className='title'>
+                      <h3>Marketing Email</h3>
+                      <span className='price'>Starts from <span>$99</span></span>
+                    </div>
+                    <div className='text'>
+                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                    </div>
                   </div>
-                  <div className='text'>
-                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
-                  </div>
-                </div>
+                </Tilt>
               </li>
               <li className='service_right fadeInRight'>
-                <div className='list_inner'>
-                  <span className='icon'>
-                    <Service_2 />
-                    <img src={Icon_2} />
-                  </span>
-                  <div className='title'>
-                    <h3>Webpage Design</h3>
-                    <span className='price'>Starts from <span>$99</span></span>
+                <Tilt className='list_inner' options={{perspective: 2000, scale: 1}}>
+                  <div>
+                    <span className='icon'>
+                      <Service_2 />
+                      <img src={Icon_2} />
+                    </span>
+                    <div className='title'>
+                      <h3>Webpage Design</h3>
+                      <span className='price'>Starts from <span>$99</span></span>
+                    </div>
+                    <div className='text'>
+                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                    </div>
                   </div>
-                  <div className='text'>
-                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
-                  </div>
-                </div>
+                </Tilt>
               </li>
               <li className='service_left fadeInLeft'>
-                <div className='list_inner'>
-                  <span className='icon'>
-                    <Service_3 />
-                    <img src={Icon_3} />
-                  </span>
-                  <div className='title'>
-                    <h3>Customized Website</h3>
-                    <span className='price'>Starts from <span>$99</span></span>
+                <Tilt className='list_inner' options={{perspective: 2000, scale: 1}}>
+                  <div>
+                    <span className='icon'>
+                      <Service_3 />
+                      <img src={Icon_3} />
+                    </span>
+                    <div className='title'>
+                      <h3>Customized Website</h3>
+                      <span className='price'>Starts from <span>$99</span></span>
+                    </div>
+                    <div className='text'>
+                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                    </div>
                   </div>
-                  <div className='text'>
-                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
-                  </div>
-                </div>
+                </Tilt>
               </li>
               <li className='service_right fadeInRight'>
-                <div className='list_inner'>
-                  <span className='icon'>
-                    <Service_4 />
-                    <img src={Icon_4} />
-                  </span>
-                  <div className='title'>
-                    <h3>SEO backlinks</h3>
-                    <span className='price'>Starts from <span>$99</span></span>
+                <Tilt className='list_inner' options={{perspective: 2000, scale: 1}}>
+                  <div>
+                    <span className='icon'>
+                      <Service_4 />
+                      <img src={Icon_4} />
+                    </span>
+                    <div className='title'>
+                      <h3>SEO backlinks</h3>
+                      <span className='price'>Starts from <span>$99</span></span>
+                    </div>
+                    <div className='text'>
+                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                    </div>
                   </div>
-                  <div className='text'>
-                    <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
-                  </div>
-                </div>
+                </Tilt>
               </li>
             </ul>
           </div>
