@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Testimonial from '../SVGComponents/SVGTestimonial'
+import TestimonialCarousel from '../Component/TestimonialCarousel'
 import Brush_8 from '../Images/brush_8.png'
 import Testimonial_1 from '../Images/testimonial_1.jpg'
 
@@ -15,44 +15,7 @@ export class Testimonials extends Component {
           </div>
           <div className='list_wrapper'>
             <div className='total'>
-              <div className='in'>
-                <ul className='carousel'>
-                  <div className='stage-outer'>
-                    <div className='stage'>
-                      <div className='item'>
-                        <li>
-                          <div className='icon'>
-                            <Testimonial />
-                          </div>
-                          <div className='text'>
-                            <p>Really the Code Quality, Customer Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends. Simply amazing team and amazing theme! Thank you from United States of America!</p>
-                          </div>
-                          <div className='short'>
-                            <div className='image'>
-                              <div className='main' style={{backgroundImage: `url(${Testimonial_1})` }}></div>
-                            </div>
-                            <div className='detail'>
-                              <h3>Keita Smith</h3>
-                              <span>ABC Group</span>
-                            </div>
-                          </div>
-                        </li>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='dots'>
-                    <div className='dot'>
-                      <span></span>
-                    </div>
-                    <div className='dot'>
-                      <span></span>
-                    </div>
-                    <div className='dot'>
-                      <span></span>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <TestimonialCarousel />
               <div className='left_details'>
                 <div className='testi_image one fadeIn'></div>
                 <div className='testi_image two fadeIn'></div>

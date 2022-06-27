@@ -13,7 +13,7 @@ body{
 img{
   max-width: 100%;
 }
-p, span{
+p {
   color: #6f6b80;
 }
 a{
@@ -1102,6 +1102,9 @@ a{
   min-height: 1px;
   float: left;
 }
+.testimonials ul{
+  padding: 0;
+}
 .testimonials ul li {
   margin: 0;
 }
@@ -1152,28 +1155,6 @@ a{
 }
 .testimonials .detail span {
   font-size: 16px;
-}
-.testimonials .dots{
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  margin-top: 64px;
-  text-align: center;
-}
-.testimonials .dots .dot {
-  display: inline-block;
-  zoom: 1;
-}
-.testimonials .dots .dot span {
-  display: block;
-  width: 15px;
-  height: 15px;
-  background-color: #f75023;
-  position: relative;
-  margin: 0 12px;
-  transition: opacity .2s ease;
-  border-radius: 30px;
 }
 .testimonials .left_details {
   position: absolute;
@@ -1337,6 +1318,35 @@ a{
   visibility: visible;
   animation-duration: 1s;
   animation-name: fadeInRight;
+}
+.testimonials .stage .carousel-inner{
+  height: 550px;
+}
+.testimonials .stage .carousel-indicators button{
+  display: block;
+  width: 15px;
+  height: 0;
+  background-color: #f75023;
+  background-clip: border-box;
+  position: relative;
+  margin: 0 12px;
+  border-top: 5px solid transparent;
+  border-radius: 30px;
+  opacity: 1;
+}
+.testimonials .stage .carousel-indicators button.active::before{
+  position: absolute;
+  display: block;
+  background-clip: border-box;
+  content:'';
+  top: -10px;
+  left: -17px;
+  width: 25px;
+  height: 25px;
+  margin: 0 12px;
+  background-color: transparent;
+  border: 2px solid #ffb324;
+  border-radius: 30px;
 }
 
 
