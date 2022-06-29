@@ -9,7 +9,7 @@ function TestimonialCarousel() {
     <div className='in'>
       <ul className='carousel'>
         <div className='stage-outer'>
-          <Carousel className='stage' pause='hover'>
+          <Carousel className='stage' controls={false}>
             <Carousel.Item className='item'>
               <li>
                 <div className='icon'>

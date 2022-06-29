@@ -8,6 +8,9 @@ import Portfolio from './Component/Portfolio';
 import Skills from './Component/Skills';
 import Services from './Component/Services';
 import Testimonials from './Component/Testimonials';
+import Partners from './Component/Partners';
+import News from './Component/News';
+import Subscribe from './Component/Subscribe';
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
       <Skills />
       <Services />
       <Testimonials />
+      <Partners />
+      <News />
+      <Subscribe />
     </div>
   );
 }

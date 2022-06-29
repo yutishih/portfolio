@@ -1349,7 +1349,217 @@ a{
   border-radius: 30px;
 }
 
+/*Partners*/
+.partners {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.partners .partners_inner {
+  width: 100%;
+  float: left;
+  clear: both;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+.partners ul {
+  margin: -2px -10px -2px -2px;
+  list-style-type: none;
+  padding-top: 2px;
+  float: left;
+  padding-left: 2px;
+  min-width: calc(100% + 12px);
+}
+.partners ul li {
+  margin: 0px;
+  float: left;
+  width: 25%;
+  border: 2px solid #eee;
+  text-align: center;
+  height: 180px;
+  line-height: 180px;
+  position: relative;
+  margin-top: -2px;
+  margin-left: -2px;
+  overflow: hidden;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+}
+.partners ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  opacity: .5;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.partners ul li .list_inner:hover {
+  opacity: 1;
+}
+.partners ul li img {
+  max-width: 88%;
+  max-height: 100px;
+}
+.partners .full_link {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+}
+.partners .brush_9 {
+  position: absolute;
+  top: -170px;
+  left: 0px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
 
+/*News*/
+.news {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 185px;
+  margin-bottom: 160px;
+  position: relative;
+}
+.news .main_title {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  clear: both;
+  text-align: center;
+  margin: 0px auto;
+}
+.news .main_title span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f75023;
+  font-family: 'Jost', sans-serif;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.news .main_title h3 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 23px;
+}
+.news .news_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 65px;
+}
+.news ul {
+  margin: 0px 0px 0px -25px;
+  list-style-type: none;
+}
+.news ul li {
+  margin: 0px 0px 25px 0px;
+  width: 33.3333%;
+  float: left;
+  padding-left: 25px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInUp;
+}
+.news ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.news ul li .image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+.news ul li .image img {
+  position: relative;
+  min-width: 100%;
+  transition: all .3s ease;
+}
+.news ul li .image img:hover {
+  transform: scale(1.2);
+}
+.news ul li .date {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: inline-block;
+  background-color: #1cbe59;
+  border-radius: 12px;
+  text-align: center;
+  padding: 13px 19px 12px 19px;
+  line-height: 1;
+}
+.news ul li .date h3 {
+  font-size: 24px;
+  color: #fff;
+  font-family: inherit;
+  line-height: 1.2;
+}
+.news ul li .date span {
+  font-size: 14px;
+  color: #fff;
+}
+.news ul li .details .category a {
+  font-size: 16px;
+  color: #f75023;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.news ul li .details .title {
+  line-height: 1.4;
+}
+.news ul li .details .title a {
+  font-size: 21px;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.news .news_hidden_details {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -11;
+}
+.news .brush_10 {
+  position: absolute;
+  top: 250px;
+  left: 115px;
+}
+.news .brush_11 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 
 
 
