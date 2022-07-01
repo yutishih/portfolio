@@ -1561,5 +1561,517 @@ a{
   right: 0px;
 }
 
+/* Subscribe */
+.subscribe {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.subscribe .inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.subscribe .background {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 12px;
+}
+.subscribe .background .dots {
+  background-image: url("./Images/dots.jpg");
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+.subscribe .background .overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(128,103,240,.92);
+  z-index: 1;
+  border-radius: 12px;
+}
+.subscribe .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 83px 90px 86px 90px;
+}
+.subscribe .left {
+  width: 50%;
+  padding-right: 40px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
+.subscribe .subtitle {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 5px;
+}
+.subscribe .title {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.subscribe .text {
+  color: #fff;
+}
+.dizme_tm_subscribe .right {
+  width: 50%;
+  padding-left: 10px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
+}
+.subscribe .field {
+  width: 100%;
+  position: relative;
+}
+.subscribe .field input{
+  border: none;
+}
+.subscribe .field input[type="text"] {
+  width: 100%;
+  height: 72px;
+  border-radius: 12px;
+  color: #6f6b80;
+  background-color: #fff;
+  padding-left: 30px;
+}
+.subscribe .field input[type="submit"] {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 72px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: #f75023;
+  padding: 0px 35px;
+}
+
+/* Contact */
+.contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 190px;
+  margin-bottom: 200px;
+  position: relative;
+}
+.contact .main_title {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  clear: both;
+  text-align: center;
+  margin: 0px auto;
+}
+.contact .main_title span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f75023;
+  font-family: 'Jost', sans-serif;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.contact .main_title h3 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 23px;
+}
+.contact .contact_inner {
+  width: 100%;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 182px;
+  position: relative;
+}
+.contact .left {
+  width: 50%;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
+.contact .left ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.contact .left ul li {
+  margin: 0px 0px 15px 0px;
+}
+.contact .left .list_inner {
+  display: flex;
+  align-items: center;
+}
+.contact .left .icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+  position: relative;
+}
+.contact .left .icon svg {
+  position: absolute;
+  width: 22px;
+  height: auto;
+  top: 40%;
+  left: 40%;
+}
+.contact .left .icon.location svg {
+  color: #f75023;
+}
+.contact .left .icon.email svg {
+  color: #1cbe59;
+}
+.contact .left .icon.phone svg {
+  color: #8067f0;
+}
+.contact .left .short {
+  padding-left: 25px;
+}
+.contact .left .short span{
+  font-size: 18px;
+  color: #6f6b80;
+}
+.contact .left .short h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.contact .left .short a{
+  text-decoration: none;
+  color: #6f6b80;
+}
+.orangeBackground {
+  background-color: #fedfd7 !important;
+}
+.greenBackground {
+  background-color: #ddf5e6 !important;
+}
+.purpleBackground {
+  background-color: #ece8fd !important;
+}
+.contact .right {
+  width: 50%;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
+}
+.contact .fields {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.contact .returnmessage {
+  color: #3A00FF;
+  margin-bottom: 7px;
+  text-align: left;
+  font-weight: 500;
+}
+.contact .empty_notice {
+  color: #F52225;
+  margin-bottom: 7px;
+  display: none;
+  text-align: left;
+  font-weight: 500;
+}
+.contact .input_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.contact .input_list ul {
+  margin: 0px 0px 0px -45px;
+  list-style-type: none;
+}
+.contact .input_list ul li {
+  margin: 0px 0px 12px 0px;
+  width: 50%;
+  float: left;
+  padding-left: 12px;
+}
+.contact input {
+  width: 100%;
+  height: 58px;
+  padding: 0px 30px;
+  background-color: transparent;
+  border: 1px solid #d6dbe5;
+  border-radius: 12px;
+  color: #6f6b80;
+  font-size: 18px;
+}
+.contact .message_area {
+  width: 100%;
+  float: left;
+  margin-bottom: 4px;
+}
+.contact .message_area textarea {
+  width: 100%;
+  height: 200px;
+  padding: 16px 30px 30px 30px !important;
+  background-color: transparent;
+  border: 1px solid #d6dbe5;
+  border-radius: 12px;
+  color: #6f6b80;
+  font-size: 18px;
+}
+.contact .button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.contact .button a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 2px solid #f75023;
+  padding: 14px 48px 13px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.contact .button a:before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  background-color: #f75023;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 110%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.contact .button a:hover:before {
+  height: 0;
+}
+.contact .button span {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.contact .button a:hover span {
+  color: #000;
+}
+.contact .contact_inner .brush_13 {
+  position: absolute;
+  bottom: -100px;
+  right: -150px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
+}
+.contact .map {
+  width: 100%;
+  float: left;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInUp;
+}
+.contact .mapouter {
+  position: relative;
+  text-align: right;
+  height: 375px;
+  width: 100%;
+}
+.contact .gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 375px;
+  width: 100%;
+  border-radius: 12px;
+}
+.contact .brush_12 {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
+
+/* CopyRight */
+.copyright {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f2f5fb;
+  padding: 57px 0px 61px 0px;
+}
+.copyright .inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright .left{
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+}
+.copyright .left p {
+  font-size: 16px;
+}
+.copyright .left span {
+  text-decoration: none;
+  color: #6f6b80;
+  font-weight: 700;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.copyright .right{
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
+}
+.copyright .right ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.copyright .right ul li {
+  margin: 0px 42px 0px 0px;
+  display: inline-block;
+}
+.copyright .right ul li a {
+  text-decoration: none;
+  color: #6f6b80;
+  font-size: 16px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* MouseCursor*/
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: visible;
+}
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f75023;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: .5;
+  -webkit-transition: all .08s ease-out;
+  transition: all .08s ease-out;
+}
+.cursor-outer.hovered{
+  opacity: 0;
+}
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 100;
+  background-color: #f75023;
+  -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+}
+.cursor-inner.hovered{
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #f75023;
+  opacity: .3;
+}
+
+/* ProgressBar */
+.progressbar {
+  position: fixed;
+  height: 100px;
+  width: 1px;
+  bottom: 25px;
+  right: -25px;
+  background-color: rgba(0,0,0,.4);
+  z-index: 10;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.progressbar.animate {
+  right: 25px;
+}
+.progressbar a {
+  text-decoration: none;
+  color: #000;
+}
+.progressbar .text {
+  position: absolute;
+  bottom: 150px;
+  left: 0px;
+  font-size: 13px;
+  transform: rotateZ(90deg);
+  text-transform: uppercase;
+  transform-origin: left;
+  white-space: nowrap;
+}
+.progressbar .line {
+  position: absolute;
+  width: 1px;
+  height: auto;
+}
+
+
+
+
+
+
 
 

@@ -11,9 +11,13 @@ import Testimonials from './Component/Testimonials';
 import Partners from './Component/Partners';
 import News from './Component/News';
 import Subscribe from './Component/Subscribe';
-
+import Contact from './Component/Contact';
+import CopyRight from './Component/CopyRight';
+import MouseCursor from './Component/MouseCursor';
+import ProgressBar from './Component/ProgressBar';
 
 function App() {
+
   return (
     <div className="App">
       <Navigation />
@@ -27,6 +31,10 @@ function App() {
       <Partners />
       <News />
       <Subscribe />
+      <Contact />
+      <CopyRight />
+      <MouseCursor />
+      <ProgressBar />
     </div>
   );
 }
