@@ -3,6 +3,7 @@ import { MouseContext } from '../Context/MouseContext';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Brush_12 from '../Images/brush_12.png'
 import Brush_13 from '../Images/brush_13.png'
+import GoogleMap from './GoogleMap';
 
 function Contact (){
 
@@ -97,6 +98,7 @@ function Contact (){
           <div className='map fadeInUp'>
             <div className='mapouter'>
               <div className='gmap_canvas'>
+                <GoogleMap />
               </div>
             </div>
           </div>
