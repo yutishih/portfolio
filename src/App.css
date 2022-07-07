@@ -1916,6 +1916,9 @@ a{
   width: 100%;
   border-radius: 12px;
 }
+.contact .gmap_canvas div{
+  height: 100%;
+}
 .contact .brush_12 {
   position: absolute;
   top: 100px;

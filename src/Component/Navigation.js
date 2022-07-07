@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Container } from 'react-bootstrap';
+import { MouseContext } from '../Context/MouseContext';
 import Logo from '../Images/logo.png';
 
 function Navigation() {
@@ -18,6 +19,10 @@ function Navigation() {
     window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
+  // Cursor Hover Effect
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+
+
   return (
     <div className='section-component'>
       <div className='navigation'>
@@ -27,14 +32,22 @@ function Navigation() {
               <div className='logo'>
                 <img src={Logo} />
               </div>
-              <div className='menu'>
+              <div className='menu' 
+                
+              >
                 <ul>
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                  <li className='download_cv'><a><span>Download CV</span></a></li>
+                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}>Home</a></li>
+                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}>About</a></li>
+                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}>Portfolio</a></li>
+                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}>Blog</a></li>
+                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}>Contact</a></li>
+                  <li className='download_cv'><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                        onMouseLeave={() => cursorChangeHandler("")}><span>Download CV</span></a></li>
                 </ul>
               </div>
             </div>

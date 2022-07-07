@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TestimonialCarousel from '../Component/TestimonialCarousel'
 import Brush_8 from '../Images/brush_8.png'
-import Testimonial_1 from '../Images/testimonial_1.jpg'
 
 export class Testimonials extends Component {
   render() {

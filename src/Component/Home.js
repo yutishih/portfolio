@@ -39,11 +39,6 @@ function Home (){
                   </a>
                 </div>
                 <div className='social'>
-                  <ul>
-                    <li><a>1</a></li>
-                    <li><a>2</a></li>
-                    <li><a>3</a></li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -64,7 +59,8 @@ function Home (){
           </div>
         </div>
         <div className='down-icon'>
-          <a className='anchor' href="#">
+          <a className='anchor' href="#" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                                        onMouseLeave={() => cursorChangeHandler("")}>
             <SVGArrowDown />
           </a>
         </div>
