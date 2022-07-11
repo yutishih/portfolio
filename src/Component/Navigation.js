@@ -5,6 +5,7 @@ import Logo from '../Images/logo.png';
 
 function Navigation() {
 
+  //Navigation scroll down effect
   const [HeaderColor, setHeaderColor] = useState('navi_wrapper');
   const listenScrollEvent = (event) => {
     if (window.scrollY < 70){
@@ -32,9 +33,7 @@ function Navigation() {
               <div className='logo'>
                 <img src={Logo} />
               </div>
-              <div className='menu' 
-                
-              >
+              <div className='menu'>
                 <ul>
                   <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>Home</a></li>

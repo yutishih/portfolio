@@ -1,6 +1,5 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './Component/Navigation';
+import MobileMenu from './Component/MobileMenu';
 import Home from './Component/Home';
 import Process from './Component/Process';
 import About from './Component/About';
@@ -16,11 +15,13 @@ import CopyRight from './Component/CopyRight';
 import MouseCursor from './Component/MouseCursor';
 import ProgressBar from './Component/ProgressBar';
 
+
 function App() {
 
   return (
-    <div className="App">
+    <div className="App all-wrap">
       <Navigation />
+      <MobileMenu />
       <Home />
       <Process />
       <About />

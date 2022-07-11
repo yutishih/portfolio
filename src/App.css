@@ -1,4 +1,9 @@
 /* Convas Setting */
+html{
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
 body{
   overflow-x: hidden;
   width: 100%;
@@ -117,6 +122,92 @@ a{
 }
 .navigation .menu ul li a:hover span{
   color: #fff;
+}
+
+/*Mobile Menu*/
+.mobile_menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10;
+}
+.mobile_menu .mobile_menu_inner {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding: 10px 20px 10px 20px;
+}
+.mobile_menu .mobile_in .logo img {
+  max-width: 90px;
+  max-height: 70px;
+}
+.mobile_menu .trigger {
+  line-height: 0;
+}
+.mobile_menu .hamburger {
+  padding: 0px;
+}
+.mobile_menu .hamburger-box {
+  width: 30px;
+}
+.mobile_menu .mobile_in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile_menu .dropdown {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  display: block;
+}
+.mobile_menu .dropdown.hide {
+  display: none;
+}
+.mobile_menu .dropdown .dropdown_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 25px 40px;
+}
+.mobile_menu .dropdown .dropdown_inner ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.mobile_menu .dropdown .dropdown_inner ul li {
+  margin: 0px;
+  float: left;
+  width: 100%;
+}
+.mobile_menu .dropdown .dropdown_inner ul li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 0px 0px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+.mobile_menu .download_cv {
+  padding-top: 20px;
+}
+.mobile_menu .download_cv a {
+  color: #fff !important;
+  border-radius: 50px;
+  background-color: #f75023;
+  padding: 7px 40px !important;
 }
 
 /* Home */
@@ -2071,6 +2162,24 @@ a{
   width: 1px;
   height: auto;
 }
+
+/*Responsive App CSS*/
+@media only screen and (max-width: 768px) {
+  .mouse-cursor {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation{
+    display: none;
+  }
+  .mobile_menu {
+    display: inline-block;
+  }
+}
+
+
+
 
 
 
