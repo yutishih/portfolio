@@ -172,25 +172,43 @@ a{
   float: left;
   background-color: #fff;
   display: block;
+  transition: all .8s ease-in-out;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: slideDown;
 }
 .mobile_menu .dropdown.hide {
   display: none;
+}
+@keyframes slideDown{
+  0% {
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%; 
+  }
 }
 .mobile_menu .dropdown .dropdown_inner {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
-  padding: 25px 40px;
+  padding: 25px 10px;
 }
 .mobile_menu .dropdown .dropdown_inner ul {
   margin: 0px;
   list-style-type: none;
+  transition: all .2s ease-in-out;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
 }
 .mobile_menu .dropdown .dropdown_inner ul li {
   margin: 0px;
   float: left;
   width: 100%;
+  padding-bottom: 10px;
 }
 .mobile_menu .dropdown .dropdown_inner ul li a {
   text-decoration: none;
@@ -201,13 +219,13 @@ a{
   font-weight: 500;
 }
 .mobile_menu .download_cv {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 .mobile_menu .download_cv a {
-  color: #fff !important;
-  border-radius: 50px;
-  background-color: #f75023;
-  padding: 7px 40px !important;
+  color: #f75023 !important;
+  border: solid #f75023 2px;
+  padding: 2px 20px !important;
+  font-weight: 600 !important;
 }
 
 /* Home */
@@ -241,7 +259,6 @@ a{
   justify-content: space-between;
 }
 .home .details {
-  width: 50%;
   padding-right: 20px;
 }
 .home .hello h3{
@@ -322,25 +339,7 @@ a{
   z-index: 2;
   transition: all .3s ease;
 }
-.home .social {
-  padding-left: 27px;
-  position: relative;
-  top: -4px;
-}
-.home .social ul {
-  margin: 0;
-  list-style-type: none;
-}
-.home .social ul li {
-  margin: 0 5px 0 0;
-  display: inline-block;
-}
-.home .social ul li a {
-  text-decoration: none;
-  color: #000;
-}
 .home .avatar {
-  width: 50%;
   padding-left: 100px;
 }
 .home .image {
@@ -478,7 +477,6 @@ a{
   align-items: center;
 }
 .about .left{
-  width: 50%;
   padding-right: 60px;
 }
 .about .left .image{
@@ -520,7 +518,7 @@ a{
   line-height: 1.3;
   padding-left: 17px;
 }
-.about .number.project {
+.about .left .number.project {
   bottom: 70px;
   right: -30px;
 }
@@ -532,7 +530,6 @@ a{
   color: #6e50f0;
 }
 .about .right {
-  width: 50%;
   padding-left: 60px;
 }
 .about .right .title {
@@ -2176,7 +2173,151 @@ a{
   .mobile_menu {
     display: inline-block;
   }
+  .home{
+    margin-bottom: 100px;
+  }
+  .home .content{
+    align-content: space-evenly;
+    text-align: center;
+  }
+  .home .details{
+    order: 2;
+    margin-top: 250px;
+  }
+  .home .hello h3 {
+    font-size: 21px;
+  }
+  .home .name {
+    margin-bottom: 11px;
+  }
+  .home .name h3 {
+    font-size: 42px;
+  }
+  .home .job {
+    margin-bottom: 15px;
+  }
+  .home .job p {
+    font-size: 18px;
+  }
+  .home .text {
+    margin-bottom: 30px;
+  }
+  .home .text p {
+    font-size: 16px;
+  }
+  .home .button {
+    justify-content: center;
+  }
+  .home .button {
+    width: auto;
+  }
+  .home .button-wrapper a{
+    padding: 5px 30px;
+  }
+  .home .button-wrapper a span{
+    font-size: 16px;
+  }
+  .home .button-wrapper a:before{
+    height: 120%;
+  }
+  .home .avatar{
+    order: 1;
+    padding: 0;
+    height: 0;
+  }
+  .home .avatar span{
+    display: none;
+  }
+  .home .avatar img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .home .down-icon{
+    left: 47%;
+    bottom: 20px;
+  }
+  .process ul li{
+    width: 100%;
+    padding-left: 0;
+  }
+  .process ul li img{
+    max-width: 90px !important;
+  }
+  .process ul li svg{
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .about .left{
+    text-align: center;
+    padding-right: 0;
+  }
+  .about .left .image img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .about .left .number.year {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about .number .wrapper {
+    padding: 14px 30px 11px 26px !important;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bout .number .wrapper h3 {
+    font-size: 45px;
+  }
+  .about .number .wrapper .name {
+    font-size: 18px;
+  }
+  .about .left .number.project {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-bottom: 30px;
+  }
+  .about .number.project .wrapper {
+    padding:14px 30px 11px 26px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .number .wrapper h3 {
+    font-size: 45px;
+  }
+  .about .number .wrapper .name {
+    font-size: 18px;
+  }
+  .about .right {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .about .right .title span {
+    font-size: 20px;
+  }
+  .about .right .title h3 {
+    font-size: 35px;
+    max-width: 100%;
+  }
+  .about .button a {
+    padding: 9px 35px 8px 35px;
+  }
+  .about .brush_1 img{
+    display: none;
+  }
+  .about .brush_2 img{
+    display: none;
+  }
+
+
+
+
+
 }
+
 
 
 

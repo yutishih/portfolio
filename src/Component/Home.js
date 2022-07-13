@@ -1,6 +1,7 @@
 import React, { useContext, Component } from 'react'
 import { MouseContext } from '../Context/MouseContext';
 import Avatar from '../Images/avatar.png';
+import { Row, Col } from 'react-bootstrap';
 import SVGArrowDown from '../SVGComponents/SVGArrowDown';
 import SVGAWS from '../SVGComponents/SVGAWS';
 import SVGPhotoshop from '../SVGComponents/SVGPhotoshop';
@@ -15,8 +16,8 @@ function Home (){
       <div className='home'>
         <div className='background'></div>
         <div className='container'>
-          <div className='content'>
-            <div className='details'>
+          <Row className='content'>
+            <Col sm={12} md={6} lg={6} className='details'>
               <div className='hello'>
                 <h3 className='orangeText'>Hello, I,m</h3>
               </div>
@@ -41,8 +42,8 @@ function Home (){
                 <div className='social'>
                 </div>
               </div>
-            </div>
-            <div className='avatar'>
+            </Col>
+            <Col sm={12} md={6} lg={6} className='avatar'>
               <div className='image'>
                 <img src={Avatar} />
                 <span className='skills reactjs anim_moveBottom'>
@@ -55,8 +56,8 @@ function Home (){
                   <SVGAWS />
                 </span>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
         <div className='down-icon'>
           <a className='anchor' href="#" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }

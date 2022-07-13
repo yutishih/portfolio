@@ -1,6 +1,6 @@
 import React, { useContext, Component } from 'react'
 import { MouseContext } from '../Context/MouseContext';
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import AboutSideImg from '../Images/about.jpg'
 import Brush_1 from '../Images/about_brush_1.png'
 import Brush_2 from '../Images/about_brush_2.png'
@@ -13,8 +13,8 @@ function About (){
     <div className='section-component'>
       <div className='about'>
         <Container>
-          <div className='wrapper'>
-            <div className='left'>
+          <Row className='wrapper'>
+            <Col sm={12} md={6} lg={6} className='left'>
               <div className='image'>
                 <img src={AboutSideImg} />
                 <div className='number year'>
@@ -42,8 +42,8 @@ function About (){
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='right'>
+            </Col>
+            <Col sm={12} md={6} lg={6} className='right'>
               <div className='title'>
                 <span>I'm a Designer</span>
                 <h3>I Can Design Anything You Want</h3>
@@ -57,8 +57,8 @@ function About (){
                   <span>Hire Me</span>
                 </a>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
         <div className='brush_1 fadeInLeft'>
           <img src={Brush_1} />

@@ -42,7 +42,7 @@ function MobileMenu (){
         </div>
         <div className={"dropdown" + ( toggleOn ? " " : " hide" )}>
           <div className='dropdown_inner'>
-            <ul className='anchor_nav'>
+            <ul className='anchor_nav fadeInLeft'>
               <li>
                 <a href="#">Home</a>
               </li>
