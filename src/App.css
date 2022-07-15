@@ -2311,6 +2311,33 @@ a{
   .about .brush_2 img{
     display: none;
   }
+  .portfolio .portfolio_filter {
+    padding-top: 53px;
+    padding-bottom: 46px;
+  }
+  .portfolio .portfolio_filter ul li {
+    margin: 0px 30px 0px 0px;
+    display: inline-block;
+  }
+  .portfolio .portfolio_list ul {
+    margin: 0px;
+  }
+  .portfolio .portfolio_list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .portfolio .portfolio_list .main {
+    border-radius: 12px;
+  }
+  .portfolio .mobile_title {
+    display: block;
+  }
+  .portfolio .brush_4 {
+    display: none;
+  }
+  .portfolio .brush_5 {
+    display: none;
+  }
 
 
 

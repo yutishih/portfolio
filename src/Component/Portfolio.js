@@ -10,6 +10,9 @@ import Portfolio_5 from '../Images/portfolio_5.jpg'
 import Portfolio_6 from '../Images/portfolio_6.jpg'
 import Brush_4 from '../Images/brush_4.png'
 import Brush_5 from '../Images/brush_5.png'
+import useMousePosition from "../Hooks/useMousePosition";
+import useWindowSize from '../Hooks/useWindowSize'
+
 
 function Portfolio() {
 
@@ -112,8 +115,14 @@ function Portfolio() {
     setValueSixthItem(false);
   }
 
+  const {x, y} = useWindowSize();
+
   return (
     <div className='section-component'>
+      
+      {/* X and Y are ready to use as requirements for resize the screen */}
+      <div><p>{x} and {y}</p></div>
+      
       <div className='portfolio'>
         <Container>
           <div className='title'>
@@ -137,7 +146,7 @@ function Portfolio() {
           </div>
           <div className='portfolio_list fadeInUp'>
             <ul className='gallery_zoom grid' style={{position: 'relative', height: 957.126}}>
-              <li className={"youtube grid_item" + (showYoutube ? " show":" hide")}  style={{left: (valueFirstItem ? 0:0), top: (valueFirstItem ? 0:0)}}>
+              <li className={"youtube grid_item" + (showYoutube ? " show":" hide")}  style={{left: (valueFirstItem ? 0 : 0), top: (valueFirstItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -151,7 +160,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={"vimeo grid_item" + (showVimeo ? " show":" hide")} style={{left: (valueSecondItem ? 448.328 : 0), top: (valueSecondItem ? 0:0)}}>
+              <li className={"vimeo grid_item" + (showVimeo ? " show":" hide")} style={{left: (valueSecondItem ? 35+'%' : 0), top: (valueSecondItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -165,7 +174,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'soundcloud grid_item' + (showSoundcloud ? " show":" hide")} style={{left: (valueThirdItem ? 896.656 : 0), top: (valueThirdItem ? 0:0)}}>
+              <li className={'soundcloud grid_item' + (showSoundcloud ? " show":" hide")} style={{left: (valueThirdItem ? 70+'%' : 0), top: (valueThirdItem ? 0:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -175,7 +184,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid_item' + (showPopup ? " show":" hide")} style={{left: (valueFourthItem ? 448.328 : 0), top: (valueFourthItem ? 367.688:0)}}>
+              <li className={'popup grid_item' + (showPopup ? " show":" hide")} style={{left: (valueFourthItem ? 35+'%' : 38+'%'), top: (valueFourthItem ? 367.688:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -189,7 +198,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid_item popUp' + (showPopup ? " show":" hide") } style={{left: (valueFifthItem ? 0 : 448.328), top: (valueFifthItem ? 589.438:0)}}>
+              <li className={'popup grid_item popUp' + (showPopup ? " show":" hide") } style={{left: (valueFifthItem ? 0 : 60+'%'), top: (valueFifthItem ? 589.438:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -199,7 +208,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'detail grid_item popUp' + (showDetail ? " show":" hide")} style={{left: (valueSixthItem ? 896.656 : 0), top: (valueSixthItem ? 589.438:0)}}>
+              <li className={'detail grid_item popUp' + (showDetail ? " show":" hide")} style={{left: (valueSixthItem ? 70+'%' : 60+'%'), top: (valueSixthItem ? 589.438:0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -223,6 +232,7 @@ function Portfolio() {
           <img src={Brush_5} />
         </div>
       </div>
+      {/* <WindowDimension /> */}
     </div>
   )
 }
