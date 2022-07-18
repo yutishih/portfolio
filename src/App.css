@@ -771,21 +771,6 @@ a{
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-.portfolio .mobile_title {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  padding-top: 20px;
-  display: none;
-}
-.portfolio .mobile_title h3 {
-  font-size: 18px;
-  font-weight: 600;
-}
-.portfolio .mobile_title span {
-  font-weight: 500;
-}
 .portfolio .brush_4 {
   position: absolute;
   top: 150px;
@@ -2320,17 +2305,19 @@ a{
     display: inline-block;
   }
   .portfolio .portfolio_list ul {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
   }
   .portfolio .portfolio_list ul li {
     width: 100%;
-    padding-left: 0px;
+    position: relative !important;
+    padding: 0;
+  }
+  .portfolio .portfolio_list .grid_item .main:hover{
+    transform: none;
   }
   .portfolio .portfolio_list .main {
     border-radius: 12px;
-  }
-  .portfolio .mobile_title {
-    display: block;
   }
   .portfolio .brush_4 {
     display: none;

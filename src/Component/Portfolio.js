@@ -184,7 +184,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid_item' + (showPopup ? " show":" hide")} style={{left: (valueFourthItem ? 35+'%' : 38+'%'), top: (valueFourthItem ? 367.688:0)}}>
+              <li className={'popup grid_item' + (showPopup ? " show":" hide")} style={{left: (valueFourthItem ? 35+'%' : 0), top: (valueFourthItem ? 38+'%':0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -198,7 +198,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'popup grid_item popUp' + (showPopup ? " show":" hide") } style={{left: (valueFifthItem ? 0 : 60+'%'), top: (valueFifthItem ? 589.438:0)}}>
+              <li className={'popup grid_item popUp' + (showPopup ? " show":" hide") } style={{left: (valueFifthItem ? 0 : 35+'%'), top: (valueFifthItem ? 60+'%':0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
@@ -208,7 +208,7 @@ function Portfolio() {
                   </div>
                 </div>
               </li>
-              <li className={'detail grid_item popUp' + (showDetail ? " show":" hide")} style={{left: (valueSixthItem ? 70+'%' : 60+'%'), top: (valueSixthItem ? 589.438:0)}}>
+              <li className={'detail grid_item popUp' + (showDetail ? " show":" hide")} style={{left: (valueSixthItem ? 70+'%' : 0+'%'), top: (valueSixthItem ? 60+'%':0)}}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-youtube' href="#">
