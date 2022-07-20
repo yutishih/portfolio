@@ -14,7 +14,6 @@ import Contact from './Component/Contact';
 import CopyRight from './Component/CopyRight';
 import MouseCursor from './Component/MouseCursor';
 import ProgressBar from './Component/ProgressBar';
-import Portfolio_test from './Component/Portfolio_test';
 
 
 function App() {
@@ -26,8 +25,7 @@ function App() {
       <Home />
       <Process />
       <About />
-      {/* <Portfolio /> */}
-      <Portfolio_test />
+      <Portfolio />
       <Skills />
       <Services />
       <Testimonials />
