@@ -8,7 +8,7 @@ export default function useWindowSize() {
   }
 
   // const [windowSize, setWindowSize] = useState(getWindowSize());
-  const [windowSize, setWindowSize] = useState({x: window.innerWidth, y: window.innerHeight});
+  const [windowSize, setWindowSize] = useState({x: null, y: null});
 
   useEffect(() => {
     function handleWindowResize() {

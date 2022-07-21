@@ -19,7 +19,7 @@ function Portfolio_test() {
   //get window size
   const {x, y} = useWindowSize();
 
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(true);
 
   const [showFirstItem, setShowFirstItem] = useState(true);
   const [showSecondItem, setShowSecondItem] = useState(true);
@@ -32,11 +32,6 @@ function Portfolio_test() {
   const [showAsSecond, setShowAsSecond] = useState({left: 35+'%'});
 
   const showAllItems = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
     setShowFirstItem(true);
     setShowSecondItem(true);
     setShowThirdItem(true);
@@ -45,11 +40,6 @@ function Portfolio_test() {
     setShowSixthItem(true);
   }
   const showFirstCategory = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
     setShowFirstItem(true);
     setShowSecondItem(false);
     setShowThirdItem(false);
@@ -59,11 +49,6 @@ function Portfolio_test() {
   }
 
   const showSecondCategory = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
     setShowFirstItem(false);
     setShowSecondItem(true);
     setShowThirdItem(false);
@@ -73,12 +58,6 @@ function Portfolio_test() {
   }
 
   const showThirdCategory = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
-
     setShowFirstItem(false);
     setShowSecondItem(false);
     setShowThirdItem(true);
@@ -87,11 +66,6 @@ function Portfolio_test() {
     setShowSixthItem(false);
   }
   const showFourthCategory = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
     setShowFirstItem(false);
     setShowSecondItem(false);
     setShowThirdItem(false);
@@ -100,11 +74,6 @@ function Portfolio_test() {
     setShowSixthItem(false);
   }
   const showFifthCategory = () => {
-    if (x <= 600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
     setShowFirstItem(false);
     setShowSecondItem(false);
     setShowThirdItem(false);
@@ -119,7 +88,7 @@ function Portfolio_test() {
 
   return (
     <div className='section-component'>
-      
+      <div>{isMobile ? 'Mobile' : 'PC'}</div>
       <div className='portfolio'>
         <Container>
           <div className='title'>
