@@ -19,8 +19,10 @@ function Portfolio_test() {
   //get window size
   const {x, y} = useWindowSize();
 
+  //mobile or not
   const [isMobile, setIsMobile] = useState(true);
 
+  //switch categories on/off
   const [showFirstItem, setShowFirstItem] = useState(true);
   const [showSecondItem, setShowSecondItem] = useState(true);
   const [showThirdItem, setShowThirdItem] = useState(true);
@@ -28,8 +30,9 @@ function Portfolio_test() {
   const [showFifthItem, setShowFifthItem] = useState(true);
   const [showSixthItem, setShowSixthItem] = useState(true);
 
-  const [showAsFirst, setShowAsFirst] = useState({left: 0});
-  const [showAsSecond, setShowAsSecond] = useState({left: 35+'%'});
+  const [showAsFirst, setShowAsFirst] = useState({left: 0, top: 0});
+  const [showAsSecond, setShowAsSecond] = useState({left: 35+'%', top: 0});
+  const [showAsSecondSM, setShowAsSecondSM] = useState({left: 0, top: 'auto'});
 
   const showAllItems = () => {
     setShowFirstItem(true);
@@ -38,6 +41,12 @@ function Portfolio_test() {
     setShowFourthItem(true);
     setShowFifthItem(true);
     setShowSixthItem(true);
+
+    if(x<600){
+      setIsMobile(true);
+    }else{
+      setIsMobile(false);
+    }
   }
   const showFirstCategory = () => {
     setShowFirstItem(true);
@@ -88,7 +97,7 @@ function Portfolio_test() {
 
   return (
     <div className='section-component'>
-      <div>{isMobile ? 'Mobile' : 'PC'}</div>
+      <div>{x} and {y}</div>
       <div className='portfolio'>
         <Container>
           <div className='title'>
