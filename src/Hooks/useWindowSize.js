@@ -8,13 +8,14 @@ export default function useWindowSize() {
   }
 
   // const [windowSize, setWindowSize] = useState(getWindowSize());
-  const [windowSize, setWindowSize] = useState({ x: null, y: null });
+  const [windowSize, setWindowSize] = useState({x: window.innerWidth, y: window.innerHeight});
 
   useEffect(() => {
     function handleWindowResize() {
       // setWindowSize(getWindowSize());
       setWindowSize({x: window.innerWidth, y: window.innerHeight});
     }
+    setWindowSize({x: window.innerWidth, y: window.innerHeight});
 
     window.addEventListener('resize', handleWindowResize);
 
