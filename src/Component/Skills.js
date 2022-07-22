@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import skills_right from '../Images/skills.jpg'
 
 function Skills() {
@@ -24,15 +25,15 @@ function Skills() {
   return (
     <div className='section-component'>
       <div className='skills'>
-        <div className='container'>
-          <div className='wrapper'>
-            <div className='left'>
+        <Container>
+          <Row className='wrapper'>
+            <Col className='left'>
               <div className='main_title fadeInUp'>
                 <span>Design is Life</span>
                 <h3>I develop Skills Regularly to Keep Me Update</h3>
                 <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
               </div>
-              <div className='progress_bar fadeInUp'>
+              <div sm={12} md={6} lg={6} className='progress_bar fadeInUp'>
                 <div className='progress_inner'>
                   <span>
                     <span className='label opened'>Illustrator</span>
@@ -67,12 +68,12 @@ function Skills() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className='right'>
+            </Col>
+            <Col sm={12} md={6} lg={6} className='right'>
               <img src={skills_right} />
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   )

@@ -19,7 +19,7 @@ export class Subscribe extends Component {
                 </div>
                 <div className='left fadeInRight'>
                   <div className='field'>
-                    <input type='text' placeholder="Your Email Here"></input>
+                    <input type='text' placeholder="Your Email"></input>
                     <input type='submit' value="Send Now" />
                   </div>
                 </div>

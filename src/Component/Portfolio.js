@@ -15,13 +15,6 @@ import useWindowSize from '../Hooks/useWindowSize'
 
 function Portfolio_test() {
 
-
-  //get window size
-  const {x, y} = useWindowSize();
-
-  //mobile or not
-  const [isMobile, setIsMobile] = useState(true);
-
   //switch categories on/off
   const [showFirstItem, setShowFirstItem] = useState(true);
   const [showSecondItem, setShowSecondItem] = useState(true);
@@ -30,9 +23,8 @@ function Portfolio_test() {
   const [showFifthItem, setShowFifthItem] = useState(true);
   const [showSixthItem, setShowSixthItem] = useState(true);
 
-  const [showAsFirst, setShowAsFirst] = useState({left: 0, top: 0});
-  const [showAsSecond, setShowAsSecond] = useState({left: 35+'%', top: 0});
-  const [showAsSecondSM, setShowAsSecondSM] = useState({left: 0, top: 'auto'});
+  const [currentFirst, setCurrentFirst] = useState(false);
+  const [currentSecond, setCurrentSecond] = useState(false);
 
   const showAllItems = () => {
     setShowFirstItem(true);
@@ -42,11 +34,8 @@ function Portfolio_test() {
     setShowFifthItem(true);
     setShowSixthItem(true);
 
-    if(x<600){
-      setIsMobile(true);
-    }else{
-      setIsMobile(false);
-    }
+    setCurrentFirst(false);
+    setCurrentSecond(false);
   }
   const showFirstCategory = () => {
     setShowFirstItem(true);
@@ -55,6 +44,9 @@ function Portfolio_test() {
     setShowFourthItem(false);
     setShowFifthItem(false);
     setShowSixthItem(false);
+
+    setCurrentFirst(true);
+    setCurrentSecond(false);
   }
 
   const showSecondCategory = () => {
@@ -64,6 +56,9 @@ function Portfolio_test() {
     setShowFourthItem(false);
     setShowFifthItem(false);
     setShowSixthItem(false);
+
+    setCurrentFirst(true);
+    setCurrentSecond(false);
   }
 
   const showThirdCategory = () => {
@@ -73,6 +68,9 @@ function Portfolio_test() {
     setShowFourthItem(false);
     setShowFifthItem(false);
     setShowSixthItem(false);
+
+    setCurrentFirst(true);
+    setCurrentSecond(false);
   }
   const showFourthCategory = () => {
     setShowFirstItem(false);
@@ -81,6 +79,9 @@ function Portfolio_test() {
     setShowFourthItem(true);
     setShowFifthItem(true);
     setShowSixthItem(false);
+
+    setCurrentFirst(true);
+    setCurrentSecond(true);
   }
   const showFifthCategory = () => {
     setShowFirstItem(false);
@@ -89,6 +90,9 @@ function Portfolio_test() {
     setShowFourthItem(false);
     setShowFifthItem(false);
     setShowSixthItem(true);
+
+    setCurrentFirst(true);
+    setCurrentSecond(false);
   }
 
 
@@ -97,7 +101,6 @@ function Portfolio_test() {
 
   return (
     <div className='section-component'>
-      <div>{x} and {y}</div>
       <div className='portfolio'>
         <Container>
           <div className='title'>
@@ -120,11 +123,8 @@ function Portfolio_test() {
             <span className='work_cat'>Soundcloud</span>
           </div>
           <div className='portfolio_list fadeInUp'>
-            <ul className='gallery_zoom grid' style={{position: 'relative', height: 957.126}}>
-              <li className={"category-1 grid_item" + (showFirstItem ? " show":" hide")}  style={{
-                                                                                        left: 0, 
-                                                                                        top: 0
-                                                                                      }}>
+            <ul className='gallery_zoom grid'>
+              <li className={"category-1 grid_item" + (showFirstItem ? " show":" hide") + (currentFirst ? " current-first":" ")}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-1' href="#">
@@ -134,10 +134,7 @@ function Portfolio_test() {
                   </div>
                 </div>
               </li>
-              <li className={"category-2 grid_item" + (showSecondItem ? " show":" hide")} style={{
-                                                                                      left: ( isMobile ? 0 : (showAsFirst ? 0: 35+'%')), 
-                                                                                      top: ( isMobile ? (showAsFirst ? 0: 'auto') : 0), 
-                                                                                    }}>
+              <li className={"category-2 grid_item" + (showSecondItem ? " show":" hide") + (currentFirst ? " current-first":" ")}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-2' href="#">
@@ -147,10 +144,7 @@ function Portfolio_test() {
                   </div>
                 </div>
               </li>
-              <li className={'category-3 grid_item' + (showThirdItem ? " show":" hide")} style={{
-                                                                                          left: ( isMobile ? 0 : (showAsFirst ? 0: 70+'%')), 
-                                                                                          top: ( isMobile ? (showAsFirst ? 0: 'auto') : 0), 
-                                                                                        }}>
+              <li className={'category-3 grid_item' + (showThirdItem ? " show":" hide") + (currentFirst ? " current-first":" ")}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-3' href="#">
@@ -161,10 +155,7 @@ function Portfolio_test() {
                 </div>
               </li>
 
-              <li className={'category-4 grid_item popUp' + (showFourthItem ? " show":" hide") } style={{
-                                                                                            left: 0, 
-                                                                                            top: ( isMobile ? (showAsFirst ? 0: 'auto') : (showAsFirst ? 0: 60+'%'))
-                                                                                          }}>
+              <li className={'category-4-1 grid_item' + (showFourthItem ? " show":" hide") + (currentFirst ? " current-first":" ")}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-4' href="#">
@@ -175,10 +166,7 @@ function Portfolio_test() {
                 </div>
               </li>
 
-              <li className={'category-4 grid_item' + (showFifthItem ? " show":" hide")} style={{
-                                                                                      left: ( isMobile ? 0 : 35+'%'), 
-                                                                                      top: ( isMobile ? (showAsSecond ? 0: 'auto') : (showAsSecond ? 0: 38+'%'))
-                                                                                    }}>
+              <li className={'category-4-2 grid_item' + (showFifthItem ? " show":" hide") + (currentFirst ? " current-second":" ")}>
                 <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-4' href="#">
@@ -190,10 +178,7 @@ function Portfolio_test() {
               </li>
 
 
-              <li className={'category-5 grid_item popUp' + (showSixthItem ? " show":" hide")} style={{
-                                                                                            left: ( isMobile ? 0 : (showAsFirst ? 0: 70+'%')), 
-                                                                                            top: ( isMobile ? (showAsFirst ? 0: 'auto') : (showAsFirst ? 0: 60+'%'))
-                                                                                          }}>
+              <li className={'category-5 grid_item' + (showSixthItem ? " show":" hide") + (currentFirst ? " current-first":" ")}>
                     <div className='inner'>
                   <div className='entry portfolio_animation_wrap'>
                     <a className='popup-category-5' href="#">
@@ -213,9 +198,8 @@ function Portfolio_test() {
           <img src={Brush_5} />
         </div>
       </div>
-      {/* <WindowDimension /> */}
     </div>
-  )
+  );
 }
 
 export default Portfolio_test
