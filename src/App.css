@@ -1425,6 +1425,7 @@ a{
 }
 .testimonials .stage .carousel-inner{
   height: 550px;
+  z-index: 10;
 }
 .testimonials .stage .carousel-indicators button{
   display: block;
@@ -2177,18 +2178,98 @@ a{
 }
 
 /*Responsive App CSS*/
-@media only screen and (max-width: 768px) {
-  .mouse-cursor {
+@media only screen and (max-width: 1200px) {
+  .about .left .number.year {
+    left: -20px;
+  }
+  .about .left .number .wrapper {
+    padding: 15px 25px 15px 25px;
+  }
+  .about .left .number.year h3 {
+    font-size: 40px;
+  }
+  .about .number .wrapper .name {
+    font-size: 18px;
+  }
+  .about .number.project h3 {
+    font-size: 40px;
+  }
+  .portfolio .portfolio_list ul {
+    margin: 0;
+  }
+  .portfolio .portfolio_list ul li{
+    padding-left: 0;
+  }
+  .portfolio .portfolio_list ul .category-4-1 {
+    left: 0;
+    top: 52%;
+  }
+  .portfolio .portfolio_list ul .category-4-2 {
+    top: 33%;
+  }
+  .portfolio .portfolio_list ul .category-5 {
+    top: 52%;
+  }
+  .testimonials .left_details {
+    display: none;
+  }
+  .testimonials .right_details {
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
+  .mouse-cursor {
+    display: none;
+  }
   .navigation{
     display: none;
   }
   .mobile_menu {
     display: inline-block;
   }
+  .home .hello h3 {
+    font-size: 36px;
+  }
+  .home .name h3 {
+    font-size: 64px;
+  }
+  .about .right .title h3 {
+    font-size: 36px;
+  }
+  .portfolio .portfolio_list ul {
+    height: 600px;
+  }
+  .portfolio .portfolio_list ul .category-4-1 {
+    top: 70%;
+  }
+  .portfolio .portfolio_list ul .category-4-2 {
+    top: 44%;
+  }
+  .portfolio .portfolio_list ul .category-5 {
+    top: 70%;
+  }
+  .skills .main_title h3 {
+    font-size: 36px;
+  }
+  .services .service_list .icon {
+    width: 70px;
+  }
+  .services .service_list .icon svg {
+    width: 32px;
+    top: 36%;
+  }
+  .services .service_list .title h3 {
+    font-size: 20px;
+  }
+  .services .service_list .price {
+    font-size: 18px;
+  }
+  .testimonials .text p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+
   .home{
     margin-bottom: 100px;
   }
@@ -2451,12 +2532,6 @@ a{
   }
   .testimonials .in {
     padding: 0px 20px;
-  }
-  .testimonials .left_details {
-    display: none;
-  }
-  .testimonials .right_details {
-    display: none;
   }
   .testimonials .brush_8 {
     display: none;

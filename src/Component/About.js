@@ -14,7 +14,7 @@ function About (){
       <div className='about'>
         <Container>
           <Row className='wrapper'>
-            <Col sm={12} md={6} lg={6} className='left'>
+            <Col sm={12} md={12} lg={6} className='left'>
               <div className='image'>
                 <img src={AboutSideImg} />
                 <div className='number year'>
@@ -43,7 +43,7 @@ function About (){
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={6} lg={6} className='right'>
+            <Col sm={12} md={12} lg={6} className='right'>
               <div className='title'>
                 <span>I'm a Designer</span>
                 <h3>I Can Design Anything You Want</h3>

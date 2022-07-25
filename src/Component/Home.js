@@ -17,7 +17,7 @@ function Home (){
         <div className='background'></div>
         <div className='container'>
           <Row className='content'>
-            <Col sm={12} md={6} lg={6} className='details'>
+            <Col sm={12} md={12} lg={6} className='details'>
               <div className='hello'>
                 <h3 className='orangeText'>Hello, I,m</h3>
               </div>
@@ -43,7 +43,7 @@ function Home (){
                 </div>
               </div>
             </Col>
-            <Col sm={12} md={6} lg={6} className='avatar'>
+            <Col sm={12} md={12} lg={6} className='avatar'>
               <div className='image'>
                 <img src={Avatar} />
                 <span className='skills reactjs anim_moveBottom'>
