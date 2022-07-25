@@ -1,7 +1,7 @@
 import React, { useContext, Component } from 'react'
 import { MouseContext } from '../Context/MouseContext';
 import { Container, Row, Col } from 'react-bootstrap'
-import AboutSideImg from '../Images/about.jpg'
+import AboutSideImg from '../Images/about.png'
 import Brush_1 from '../Images/about_brush_1.png'
 import Brush_2 from '../Images/about_brush_2.png'
  

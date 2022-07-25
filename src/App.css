@@ -340,7 +340,7 @@ a{
   transition: all .3s ease;
 }
 .home .avatar {
-  padding-left: 100px;
+  padding-left: 50px;
 }
 .home .image {
   position: relative;
