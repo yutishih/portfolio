@@ -23,10 +23,10 @@ export class Process extends Component {
                       </span>
                     </div>
                     <div className='title'>
-                      <h3>Pixel Perfect</h3>
+                      <h3>Responsive Web Design</h3>
                     </div>
                     <div className='text'>
-                      <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                      <p>I create modern webpage designs compatible with all-sizes devices including mobile, tablet, and personal computer.</p>
                     </div>
                   </div>
                 </li>
@@ -39,10 +39,10 @@ export class Process extends Component {
                       </span>
                     </div>
                     <div className='title'>
-                      <h3>High Quality</h3>
+                      <h3>Customized Web Page</h3>
                     </div>
                     <div className='text'>
-                      <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                      <p>All web pages designs are customized based on pre-marketing research to fit your desires and business requirements.</p>
                     </div>
                   </div>
                 </li>
@@ -55,10 +55,10 @@ export class Process extends Component {
                       </span>
                     </div>
                     <div className='title'>
-                      <h3>Awesome Idea</h3>
+                      <h3>Time Is Gold</h3>
                     </div>
                     <div className='text'>
-                      <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+                      <p>Every second stands for cost to your business, your projects would be processed with the best priority and completed ASAP.</p>
                     </div>
                   </div>
                 </li>

@@ -105,8 +105,8 @@ function Portfolio_test() {
         <Container>
           <div className='title'>
             <span>Portfolio</span>
-            <h3>My Amazing Work</h3>
-            <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+            <h3>Previous Projects</h3>
+            <p>I would like to share some projects I completed in the past few years.</p>
           </div>
           <div className='portfolio_filter'>
             <ul>

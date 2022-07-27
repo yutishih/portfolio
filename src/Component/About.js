@@ -20,19 +20,19 @@ function About (){
                 <div className='number year'>
                   <div className='wrapper'>
                     <h3>
-                      <span>18</span>
+                      <span>6</span>
                     </h3>
                     <span className='name'>
                       Years of
                       <br />
-                      Success
+                      Experience
                     </span>
                   </div>
                 </div>
                 <div className='number project'>
                   <div className='wrapper'>
                     <h3>
-                      <span>9K</span>
+                      <span>10+</span>
                     </h3>
                     <span className='name'>
                       Total
@@ -45,16 +45,16 @@ function About (){
             </Col>
             <Col sm={12} md={12} lg={6} className='right'>
               <div className='title'>
-                <span>I'm a Designer</span>
-                <h3>I Can Design Anything You Want</h3>
+                <span>I'm a Developer</span>
+                <h3>I Can Create Any Page You Need</h3>
               </div>
               <div className='text'>
-                <p>Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                <p>Hello there! I'm a web developer/designer. With 5+ years experience as a professional developer, I am dedicated to construct modern websites for businesses to create streamline user experience in order to gain exposure and customers online.</p>
               </div>
               <div className='button'>
                 <a class='anchor' href="#" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                                           onMouseLeave={() => cursorChangeHandler("")}>
-                  <span>Hire Me</span>
+                  <span>Let's Talk</span>
                 </a>
               </div>
             </Col>

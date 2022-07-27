@@ -29,14 +29,14 @@ function Skills() {
           <Row className='wrapper'>
             <Col className='left'>
               <div className='main_title fadeInUp'>
-                <span>Design is Life</span>
-                <h3>I develop Skills Regularly to Keep Me Update</h3>
-                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                <span>As a Developer</span>
+                <h3>I Instruct Myself Regularly to Keep Updated</h3>
+                <p>Technology moves forward every single second nowadays. As a developer, staying in-the-know could be the most important element to success.</p>
               </div>
               <div sm={12} md={6} lg={6} className='progress_bar fadeInUp'>
                 <div className='progress_inner'>
                   <span>
-                    <span className='label opened'>Illustrator</span>
+                    <span className='label opened'>Web Design</span>
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>
@@ -47,7 +47,7 @@ function Skills() {
                 </div>
                 <div className='progress_inner'>
                   <span>
-                    <span className='label opened'>Photoshop</span>
+                    <span className='label opened'>Web Development</span>
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>
@@ -58,7 +58,7 @@ function Skills() {
                 </div>
                 <div className='progress_inner'>
                   <span>
-                    <span className='label opened'>Figma</span>
+                    <span className='label opened'>Marketing Research</span>
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>

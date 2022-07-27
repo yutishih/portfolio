@@ -19,16 +19,16 @@ function Home (){
           <Row className='content'>
             <Col sm={12} md={12} lg={6} className='details'>
               <div className='hello'>
-                <h3 className='orangeText'>Hello, I,m</h3>
+                <h3 className='lightgreenText'>Greetings, I,m</h3>
               </div>
               <div className='name'>
                 <h3>Yuti Shih</h3>
               </div>
               <div className='job'>
-                <p>A <span className='greenText'>Web Designer</span> and <span className='purpleText'>Front-End Developer</span></p>
+                <p>A <span className='greenText'>Marketing Designer</span> and <span className='purpleText'>Web Developer</span></p>
               </div>
               <div className='text'>
-                <p>I'm creative designer and developer, and I'm very passionate and dedicated to my work.</p>
+                <p>I am a web developer with more than 5 years experience, specialized in Reactjs, AWS, and UI/UX.</p>
               </div>
               <div className='button'>
                 <div className='button-wrapper'
