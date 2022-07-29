@@ -1429,7 +1429,7 @@ a{
 }
 .testimonials .stage .carousel-inner{
   height: 550px;
-  z-index: 10;
+  z-index: 1;
 }
 .testimonials .stage .carousel-indicators button{
   display: block;
@@ -1614,7 +1614,7 @@ a{
   right: 18px;
   z-index: 2;
   display: inline-block;
-  background-color: #1cbe59;
+  background-color: #ffb86f;
   border-radius: 12px;
   text-align: center;
   padding: 13px 19px 12px 19px;

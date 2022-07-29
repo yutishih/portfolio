@@ -15,7 +15,7 @@ export class Subscribe extends Component {
                 <div className='left fadeInLeft'>
                   <span class="subtitle">Subscribe Now</span>
                   <h3 class="title">Get My Newsletter</h3>
-                  <p class="text">Get latest news, updates, tips and trics in your inbox</p>
+                  <p class="text">Get latest news and updates in your inbox</p>
                 </div>
                 <div className='left fadeInRight'>
                   <div className='field'>

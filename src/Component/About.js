@@ -11,7 +11,7 @@ function About (){
 
   return (
     <div className='section-component'>
-      <div className='about'>
+      <div className='about' id='about'>
         <Container>
           <Row className='wrapper'>
             <Col sm={12} md={12} lg={6} className='left'>
@@ -52,7 +52,7 @@ function About (){
                 <p>Hello there! I'm a web developer/designer. With 5+ years experience as a professional developer, I am dedicated to construct modern websites for businesses to create streamline user experience in order to gain exposure and customers online.</p>
               </div>
               <div className='button'>
-                <a class='anchor' href="#" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                <a class='anchor' href="#contact" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                                           onMouseLeave={() => cursorChangeHandler("")}>
                   <span>Let's Talk</span>
                 </a>

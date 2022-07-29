@@ -37,15 +37,15 @@ export class MapContainer extends Component {
         zoom = {14}
         style = {mapStyles}
         initialCenter = {{
-          lat: -1.2884, 
-          lng: 36.8233
+          lat: 26.177624, 
+          lng: -81.806946
         }}
       >
         <Marker name = "Hello There" onClick = {this.onMarkerClick} />
         <InfoWindow
           marker = {this.state.activeMarker}
-          visible = {this.state.showingInfoWindow}
-          onClose = {this.onInfoWindowClose}
+          // visible = {this.state.showingInfoWindow}
+          // onClose = {this.onInfoWindowClose}
         >
           <div>
             <h4>{this.state.selectedPlace.name}</h4>

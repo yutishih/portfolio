@@ -29,7 +29,7 @@ function App() {
       <Skills />
       <Services />
       <Testimonials />
-      <Partners />
+      {/* <Partners /> */}
       <News />
       <Subscribe />
       <Contact />

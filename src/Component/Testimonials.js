@@ -10,7 +10,7 @@ export class Testimonials extends Component {
           <div className='main_title'>
             <span>Testimonials</span>
             <h3>What My Clients Say</h3>
-            <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+            <p>I have collaborated with some amazing people, see what they think about me and my work as a developer</p>
           </div>
           <div className='list_wrapper'>
             <div className='total'>

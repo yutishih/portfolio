@@ -11,12 +11,12 @@ function Contact (){
 
   return (
     <div className='section-component'>
-      <div className='contact'>
+      <div className='contact' id='contact'>
         <div className='container'>
           <div className='main_title'>
             <span>Contact Me</span>
             <h3>I Want To Hear From You</h3>
-            <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+            <p>Please fill out the form on this section to contact with me. Or message me between 9:00 a.m. and 5:00 p.m. ET, Monday through Friday</p>
           </div>
           <div className='contact_inner'>
             <div className='left fadeInLeft'>
@@ -28,7 +28,7 @@ function Contact (){
                     </div>
                     <div class="short">
                       <h3>Address</h3>
-                      <span>20, Somewhere in world</span>
+                      <span>Naples, Florida, U.S</span>
                     </div>
                   </div>
                 </li>
@@ -39,7 +39,7 @@ function Contact (){
                     </div>
                     <div class="short">
                       <h3>Email</h3>
-                      <span><a href="#">hello@dizme.com</a></span>
+                      <span><a href="#">yutishih@gmail.com</a></span>
                     </div>
                   </div>
                 </li>
@@ -50,7 +50,7 @@ function Contact (){
                     </div>
                     <div class="short">
                       <h3>Phone</h3>
-                      <span>+123 456 7890</span>
+                      <span>+1 (469) 369-5372</span>
                     </div>
                   </div>
                 </li>

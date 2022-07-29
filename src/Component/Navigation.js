@@ -35,15 +35,15 @@ function Navigation() {
               </div>
               <div className='menu'>
                 <ul>
-                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                  <li><a href="#home" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>Home</a></li>
-                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                  <li><a href="#about" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>About</a></li>
-                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                  <li><a href="#portfolio" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>Portfolio</a></li>
-                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                  <li><a href="#news" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>Blog</a></li>
-                  <li><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+                  <li><a href="#contact" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}>Contact</a></li>
                   <li className='download_cv'><a onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                         onMouseLeave={() => cursorChangeHandler("")}><span>Download CV</span></a></li>

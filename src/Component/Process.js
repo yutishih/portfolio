@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Brush_1 from '../Images/brush_1.png'
 import Brush_2 from '../Images/brush_2.png' 
-import Brush_3 from '../Images/brush_3.png' 
+import Brush_3 from '../Images/brush_3.png'
 import SVGProcess_1 from '../SVGComponents/SVGProcess_1'
 import SVGProcess_2 from '../SVGComponents/SVGProcess_2'
 import SVGProcess_3 from '../SVGComponents/SVGProcess_3'

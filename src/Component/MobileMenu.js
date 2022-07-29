@@ -44,22 +44,22 @@ function MobileMenu (){
           <div className='dropdown_inner'>
             <ul className='anchor_nav fadeInLeft'>
               <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#">Service</a>
+                <a href="#services">Service</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#news">Blog</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
               <li className='download_cv'>
                 <a href="#">Download CV</a>

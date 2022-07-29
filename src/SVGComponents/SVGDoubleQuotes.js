@@ -4,8 +4,10 @@ import * as React from "react"
 const SVGTestimonial = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={200}
-    height={200}
+    width={65}
+    height={65}
+    x={0}
+    y={0}
     viewBox="796 698 200 200"
     xmlSpace="preserve"
     className="svg replaced-svg"

@@ -15,7 +15,7 @@ function Services() {
 
   return (
     <div className='section-component'>
-      <div className='services'>
+      <div className='services' id='services'>
         <div className='container'>
           <div className='main_title'>
             <span>Services</span>
@@ -32,11 +32,11 @@ function Services() {
                       <img src={Icon_1} />
                     </span>
                     <div className='title'>
-                      <h3>Marketing Email</h3>
-                      <span className='price'>Starts from <span>$99</span></span>
+                      <h3>Email Campaign</h3>
+                      <span className='price'>Starts from <span>USD $99</span></span>
                     </div>
                     <div className='text'>
-                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                      <p>I will design and code your email newsletter starting with 3 blocks. This gig is available for Mailchimp, Klaviyo, campaign monitor and more.</p>
                     </div>
                   </div>
                 </Tilt>
@@ -49,11 +49,11 @@ function Services() {
                       <img src={Icon_2} />
                     </span>
                     <div className='title'>
-                      <h3>Webpage Design</h3>
-                      <span className='price'>Starts from <span>$99</span></span>
+                      <h3>Landing Page</h3>
+                      <span className='price'>Starts from <span>USD $199</span></span>
                     </div>
                     <div className='text'>
-                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                      <p>I will design and code your one-page website by ReactJS, Wix, or WordPress depends on the requirements of your business, also compatiable with SEO and RWD. </p>
                     </div>
                   </div>
                 </Tilt>
@@ -67,10 +67,10 @@ function Services() {
                     </span>
                     <div className='title'>
                       <h3>Customized Website</h3>
-                      <span className='price'>Starts from <span>$99</span></span>
+                      <span className='price'>Starts from <span>USD $499</span></span>
                     </div>
                     <div className='text'>
-                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                      <p>I will design and build your website with RWD and SEO by ReactJS, Wix, or WordPress, starting from 1 to mutiple pages, 10 times of revisions included.</p>
                     </div>
                   </div>
                 </Tilt>
@@ -83,11 +83,11 @@ function Services() {
                       <img src={Icon_4} />
                     </span>
                     <div className='title'>
-                      <h3>SEO backlinks</h3>
-                      <span className='price'>Starts from <span>$99</span></span>
+                      <h3>Customized Portal</h3>
+                      <span className='price'>Starts from <span>USD $1,499</span></span>
                     </div>
                     <div className='text'>
-                      <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development</p>
+                      <p>I will build the portal for your business by ReactJs/WordPress, including the payroll, booking, and adminstration functions.</p>
                     </div>
                   </div>
                 </Tilt>

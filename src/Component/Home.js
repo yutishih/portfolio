@@ -13,7 +13,7 @@ function Home (){
 
   return (
     <div className='section-component'>
-      <div className='home'>
+      <div className='home' id='home'>
         <div className='background'></div>
         <div className='container'>
           <Row className='content'>
@@ -35,7 +35,7 @@ function Home (){
                   onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                   onMouseLeave={() => cursorChangeHandler("")}
                 >
-                  <a className='anchor' href="#">
+                  <a className='anchor' href="#about">
                     <span>About Me</span>
                   </a>
                 </div>
@@ -60,7 +60,7 @@ function Home (){
           </Row>
         </div>
         <div className='down-icon'>
-          <a className='anchor' href="#" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
+          <a className='anchor' href="#about" onMouseEnter={ ()=> cursorChangeHandler(" hovered") }
                                         onMouseLeave={() => cursorChangeHandler("")}>
             <SVGArrowDown />
           </a>

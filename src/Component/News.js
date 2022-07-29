@@ -7,11 +7,11 @@ export class News extends Component {
   render() {
     return (
       <div className='section-component'>
-        <div className='news'>
+        <div className='news' id='news'>
           <div className='container'>
             <div className='main_title'>
               <span>From My Blog</span>
-              <h3>Our Recent Updates, Blog, Tips, Tricks & More</h3>
+              <h3>Some Updates, Thoughts, and Things I Did</h3>
             </div>
             <div className='news_list'>
               <ul>

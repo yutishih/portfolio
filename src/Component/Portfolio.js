@@ -101,7 +101,7 @@ function Portfolio_test() {
 
   return (
     <div className='section-component'>
-      <div className='portfolio'>
+      <div className='portfolio' id='portfolio'>
         <Container>
           <div className='title'>
             <span>Portfolio</span>

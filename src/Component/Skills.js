@@ -58,7 +58,7 @@ function Skills() {
                 </div>
                 <div className='progress_inner'>
                   <span>
-                    <span className='label opened'>Marketing Research</span>
+                    <span className='label opened'>Marketing</span>
                     <span className='number'>100%</span>
                   </span>
                   <div className='background'>
