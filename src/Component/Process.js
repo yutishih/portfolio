@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import Brush_1 from '../Images/brush_1.png'
-import Brush_2 from '../Images/brush_2.png' 
-import Brush_3 from '../Images/brush_3.png'
-import SVGProcess_1 from '../SVGComponents/SVGProcess_1'
-import SVGProcess_2 from '../SVGComponents/SVGProcess_2'
-import SVGProcess_3 from '../SVGComponents/SVGProcess_3'
+import Process_1 from '../Images/process_1.png'
+import Process_2 from '../Images/process_2.png'
+import Process_3 from '../Images/process_3.png'
 
 export class Process extends Component {
   render() {
@@ -18,8 +15,7 @@ export class Process extends Component {
                   <div className='list_inner'>
                     <div className='icon'>
                       <span>
-                        <img src={Brush_1} />
-                        <SVGProcess_1 />
+                        <img src={Process_1} />
                       </span>
                     </div>
                     <div className='title'>
@@ -34,8 +30,7 @@ export class Process extends Component {
                   <div className='list_inner'>
                     <div className='icon'>
                       <span>
-                        <img src={Brush_2} />
-                        <SVGProcess_2 />
+                        <img src={Process_2} />
                       </span>
                     </div>
                     <div className='title'>
@@ -50,8 +45,7 @@ export class Process extends Component {
                   <div className='list_inner'>
                     <div className='icon'>
                       <span>
-                        <img src={Brush_3} />
-                        <SVGProcess_3 />
+                        <img src={Process_3} />
                       </span>
                     </div>
                     <div className='title'>
