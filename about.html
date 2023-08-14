@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
-    <title>Generic - Forty by HTML5 UP</title>
+    <title>About - YUTI SHIH</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="text/javascript" src="/assets/js/contactForm.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
   <body class="is-preload">
-    <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Header -->
       <header id="header">
         <a href="index.html" class="logo"
           ><strong>YUTI</strong> <span>by YutiShih</span></a
@@ -30,16 +26,19 @@
         </nav>
       </header>
 
-      <!-- Menu -->
       <nav id="menu">
         <ul class="links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="service.html">Service</a></li>
-          <li><a href="generic.html">Generic</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="actions stacked">
-          <li><a href="#" class="button primary fit">about me</a></li>
+          <li>
+            <a href="index.html#home-one" class="button primary fit"
+              >Projects</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -55,12 +54,15 @@
             <div class="row" style="margin: 0 auto">
               <div
                 class="image left col-6 col-12-medium col-12-small image-wrapper"
+                data-aos="fade-up"
               >
                 <img src="../images/about01.jpg" />
               </div>
               <div class="col-6 col-12-medium col-12-small text-wrapper">
-                <h3>Dallas: New Horizon</h3>
-                <p>
+                <h3 data-aos="fade-up" data-aos-delay="300">
+                  Dallas: New Horizon
+                </h3>
+                <p data-aos="fade-up" data-aos-delay="600">
                   Deep in the heart of Texas, the city of Dallas was where my
                   journey began, not as the web developer and analyst you see
                   today, but as a fervent graduate student. The vibrant Dallas
@@ -74,9 +76,14 @@
                   dreams.
                 </p>
               </div>
-              <div class="col-6 col-12-medium col-12-small text-wrapper">
-                <h3>Naples: Kiss the Sun</h3>
-                <p>
+              <div
+                class="col-6 col-12-medium col-12-small text-wrapper"
+                data-aos="fade-up"
+              >
+                <h3 data-aos="fade-up" data-aos-delay="300">
+                  Naples: Kiss the Sun
+                </h3>
+                <p data-aos="fade-up" data-aos-delay="600">
                   Just as I was getting comfortable with the Dallas skyline,
                   destiny had other plans. With a diploma in one hand and a
                   suitcase in the other, I found myself in Naples, Florida. The
@@ -91,12 +98,13 @@
               </div>
               <div
                 class="image right col-6 col-12-medium col-12-small image-wrapper"
+                data-aos="fade-up"
               >
                 <img src="../images/about02.jpg" />
               </div>
               <div class="text-wrapper">
-                <h3>Taiwan: Homecoming</h3>
-                <p>
+                <h3 data-aos="fade-up">Taiwan: Homecoming</h3>
+                <p data-aos="fade-up" data-aos-delay="300">
                   Time, they say, flies when you're living your passion. And
                   soon, it was time for the next chapter. With a heart full of
                   memories and a suitcase filled with experiences, I returned to
@@ -120,7 +128,7 @@
       <section id="contact">
         <div class="inner">
           <section>
-            <form method="post" action="#">
+            <form id="contact-form" method="post" action="#">
               <div class="fields">
                 <div class="field half">
                   <label for="name">Name</label>
@@ -153,9 +161,12 @@
             </section>
             <section>
               <div class="contact-method">
-                <span class="icon solid alt fa-phone"></span>
-                <h3>Phone</h3>
-                <span>Please contact me through email or fill up the form</span>
+                <span class="icon solid alt fa-sms"></span>
+                <h3>Message</h3>
+                <span
+                  >Feel free to contact me through email or fill up the
+                  form</span
+                >
               </div>
             </section>
             <section>
@@ -204,5 +215,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="/assets/js/aosScrollAnimation.js"></script>
   </body>
 </html>
