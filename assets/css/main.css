@@ -3536,7 +3536,7 @@ body.is-preload #header.alt {
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
 	pointer-events: none;
-	background-color: #242943;
+	background-color: rgba(50, 11, 34, 0.5);
 	content: '';
 	display: block;
 	height: 100%;
@@ -3593,6 +3593,7 @@ body.is-preload #header.alt {
 #banner>.inner .content>* {
 	margin-right: 1.5em;
 	margin-bottom: 0;
+	height: 50px;
 }
 
 #banner>.inner .content> :last-child {
